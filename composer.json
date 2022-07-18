@@ -1,0 +1,22 @@
+{
+  "name": "leychan/tiny-framework",
+  "description": "a tiny framework",
+  "authors": [
+    {
+      "name": "lei",
+      "email": "sanyue0315@outlook.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "tiny\\config\\": "config",
+      "tiny\\consts\\": "consts",
+      "tiny\\helper\\": "helper",
+      "tiny\\models\\": "models",
+      "tiny\\table\\": "table",
+      "tiny\\utils\\": "utils",
+      "tiny\\": "./"
+    }
+  }
+}
