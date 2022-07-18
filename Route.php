@@ -14,7 +14,7 @@ class Route {
     private $rawStr = '';
 
     public function __construct($str) {
-        $this->rawStr = $str ?: $_SERVER['REQUEST_URI'];
+        $this->rawStr = $str ?: ($_SERVER['REQUEST_URI'] ?? '');
         $this->resolve();
     }
 
