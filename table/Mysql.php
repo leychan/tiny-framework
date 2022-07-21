@@ -37,7 +37,7 @@ class Mysql {
         if (empty($config)) {
             Exception::throw(\tiny\consts\Exception::CONFIG_ERROR);
         }
-        if (empty($conn[static::$db])) {
+        if (empty(self::$conn[static::$db])) {
             self::$conn[static::$db] = new \PDO($config['dsn'], $config['username'], $config['password']);
             self::$conn[static::$db]->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 
